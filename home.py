@@ -54,7 +54,7 @@ st.write("---")
 
 st.header("Social Media Variety")
 st.info("تقدر تربطه علي كل منصات التواصل الاجتماعي")
-st.columns([1,3,1])[1].image("images/Mobile Marketing-bro.png")
+st.columns([1,3,1])[1].image("images/Mobile Marketing.gif")
 st.write("---")
 
 st.header("Global Access")
