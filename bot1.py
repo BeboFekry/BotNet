@@ -31,6 +31,8 @@ with tab1:
                     break
             if exist == False:
                 st.session_state.questions.append({"question": question, "answer": answer})
+                st.success("Success")
+                # time.sleep(1)
                 st.rerun()
     st.write("---")
     if len(st.session_state.questions) == 0:
