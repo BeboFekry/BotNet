@@ -9,7 +9,7 @@ if "questions" not in st.session_state:
     st.session_state.questions = []
 
 def add_question():
-    question = st.text_input("Question", placeholder="اكتب هنا السؤال", value="")
+    question = st.text_input("Question", placeholder="اكتب هنا السؤال")
     answer = st.text_input("Answer", placeholder="اكتب هنا الاجابة")
     return question, answer
 
