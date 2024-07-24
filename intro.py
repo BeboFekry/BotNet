@@ -18,28 +18,28 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs(["Feature 1", "Feature 2", "Feature 3", "
 with tab1:
     col1, col2 = st.columns(2)
     with col1:
-        st.image("images/i/Deconstructed robot-pana.png")
+        st.image("images/Deconstructed robot-pana.png")
     with col2:
         st.write("  \n");st.write("  \n");st.write("  \n");st.write("  \n");st.write("  \n");st.write("  \n");st.write("  \n");st.write("  \n")
         st.info("دلوقتي تقدر تكوِّن الشات بوت بتاعك بنفسك بكل سهولة")
 with tab2:
     col1, col2 = st.columns(2)
     with col1:
-        st.image("images/i/Contact us-pana.png")
+        st.image("images/Contact us-pana.png")
     with col2:
         st.write("  \n");st.write("  \n");st.write("  \n");st.write("  \n");st.write("  \n");st.write("  \n");st.write("  \n");st.write("  \n")
         st.info("تقدر تودع خدمة العملاء وتوفر مرتبات ووقت ومجهود كتير")
 with tab3:
     col1, col2 = st.columns(2)
     with col1:
-        st.image("images/i/Chat bot-pana.png")
+        st.image("images/Chat bot-pana.png")
     with col2:
         st.write("  \n");st.write("  \n");st.write("  \n");st.write("  \n");st.write("  \n");st.write("  \n");st.write("  \n");st.write("  \n")
         st.info(" :rocket: الشات بوت هيوفرلك وقت كتير في الرد علي العملاء بسرعة الصاروخ")
 with tab4:
     col1, col2 = st.columns(2)
     with col1:
-        st.image("images/i/Visionary technology-amico.png")
+        st.image("images/Visionary technology-amico.png")
     with col2:
         st.write("  \n");st.write("  \n");st.write("  \n");st.write("  \n");st.write("  \n");st.write("  \n");st.write("  \n");st.write("  \n")
         st.info("جه وقت انك ترقي البيزنس الخاص بيك لمستوي احترافي")
@@ -54,7 +54,7 @@ st.write("---")
 
 col1, col2 = st.columns([2,4])
 with col1:
-    st.image("images/i/Sign up-rafiki.png")
+    st.image("images/Sign up-rafiki.png")
 with col2:
     st.columns([1,1,1])[1].header("Sign up")
     st.info("Create account now and access all these features")
@@ -83,7 +83,7 @@ bot3 = st.Page("bot3.py", title="Chatbot 3", icon=":material/smart_toy:")
 st.subheader("Type 1")
 col1, col2 = st.columns([1,2])
 with col1:
-    st.image("images/i/Chat bot-pana.png")
+    st.image("images/Chat bot-pana.png")
 with col2:
     st.write("  \n");st.write("  \n")
     st.info("دة النوع الابسط والاكثر استخداما والاقل تكلفة مناسب جدا لشغل الصفحات زي الفيسبوك والماسنجر  \nوهنا بتقدر تحط الاسئلة الاكثر شيوعا والاجابات بتاعتها والعميل بيبقي قدامه اختيارات يختار السؤال وبتظهرله الاجابة وطبعا احنا هنساعدك في اختيار الاسئلة")
@@ -93,7 +93,7 @@ st.caption("---")
 st.subheader("Type 2")
 col1, col2 = st.columns([1,2])
 with col1:
-    st.image("images/i/Chat bot-rafiki.png")
+    st.image("images/Chat bot-rafiki.png")
 with col2:
     st.write("  \n");st.write("  \n");st.write("  \n")
     st.info("النوع الثاني ودة بيبقي اذكي باستخدام ادوات الذكاء الاصطناعي بيتم تدريبه علي البيانات الخاصة بيك وبيقدر ياخد كلام العميل ويفهمه ويستنتج هو بيسأل عن ايه وبيجاوبه باجابات بنحددها ليه")
@@ -117,7 +117,7 @@ st.caption("---")
 st.subheader("Type 3")
 col1, col2 = st.columns([1,2])
 with col1:
-    st.image("images/i/Artificial intelligence-amico.png")
+    st.image("images/Artificial intelligence-amico.png")
 with col2:
     st.write("  \n");st.write("  \n");st.write("  \n")
     st.info("النوع الثالث ودة الاذكي ويعتبر اكثر نوع يشبه الانسان باستخدام الذكاء الاصطناعي التوليدي بنجيب شات جي بي تي ونعيد تدريبه علي بياناتك عشان يكون مناسب اكثر للمهمة المحددة ليه ودة بيقدر يتكلم ويجري حوار مع العميل زي الانسان")
@@ -144,17 +144,17 @@ with col1:
     st.write("Social")
     col11, col22 = st.columns([1,4])
     with col11:
-        st.image("../images/702300.png")
+        st.image("images/702300.png")
     with col22:
         st.link_button("Linkedin", "http://www.linkedin.com/in/abdallah-fekry")
     col11, col22 = st.columns([1,4])
     with col11:
-        st.image("../images/25231.png")
+        st.image("images/25231.png")
     with col22:
         st.link_button("GitHub", "https://github.com/BeboFekry?tab=repositories")
     col11, col22 = st.columns([1,4])
     with col11:
-        st.image("../images/4844503.png")
+        st.image("images/4844503.png")
     with col22:
         st.link_button("Kaggle", "https://www.kaggle.com/bebofekry")
 with col2:

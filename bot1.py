@@ -37,7 +37,7 @@ with tab1:
         st.info("No questions found!")
     else:
         st.subheader("Test your bot")
-        st.columns([1, 1, 1])[1].image("images/i/Chat bot-pana.png")
+        st.columns([1, 1, 1])[1].image("images/Chat bot-pana.png")
         l = []
         happened = 0
         for i in st.session_state.questions:
@@ -100,7 +100,7 @@ with tab2:
         #         time.sleep(1)
         #         st.rerun()
 with tab3:
-    st.columns([1,2,1])[1].image("images/i/Chat bot-pana.png")
+    st.columns([1,2,1])[1].image("images/Chat bot-pana.png")
     # st.subheader("Test your **bot**")
     # l = []
     # happened = 0
