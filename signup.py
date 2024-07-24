@@ -1,8 +1,8 @@
 import streamlit as st
 import datetime
 import time
-import requests
-from flask import jsonify
+# import requests
+# from flask import jsonify
 
 # خلي الباسوورد 8 حروف علي الاقل وفيه char كابيتاب وسمول وارقام وسبيشيال كاراكتار
 addresses = ["@gmail.com", "@yahoo.com"]
