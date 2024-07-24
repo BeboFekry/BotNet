@@ -4,7 +4,7 @@ import streamlit as st
 # base="light"
 # primaryColor="#4b84ff"
 
-st.logo("/images/logo.png")
+# st.logo("/images/logo.png")
 
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
