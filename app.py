@@ -28,7 +28,7 @@ logout = st.Page(logoutt, title="Logout", icon=":material/logout:")
 
 
 pages2 = {
-    "":[login, signup, intro]
+    "":[intro, login, signup]
 }
 
 pages = {
