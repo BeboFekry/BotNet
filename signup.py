@@ -4,6 +4,15 @@ import time
 # import requests
 # from flask import jsonify
 
+
+@st.dialog("Terms of use:")
+def TermsOfCondition():
+    st.write("As a user in ChatHub you agree that the system will collect information about your customers orders to enhance your trial and give you a better targeting for customer")
+    if st.checkbox("Accept"):
+        st.success("Success")
+        time.sleep(2)
+        st.switch_page(login)
+
 # خلي الباسوورد 8 حروف علي الاقل وفيه char كابيتاب وسمول وارقام وسبيشيال كاراكتار
 addresses = ["@gmail.com", "@yahoo.com"]
 
@@ -38,15 +47,14 @@ with col3:
         if password is "":
             st.error("Enter your data!")
         if log==True:
-            body = jsonify({"fname":fname,"lname":lname,"date":date,"email":email,"password":password})
-            response = requests.post(url, json=body)
-            if response.json()['message'] =="success":
-                st.success("Success")  # complete here
-                # st.balloons()
-                time.sleep(2)
-                st.switch_page(login)
-            else:
-                st.error(response.json()['message'])
+            TermsOfCondition()
+
+            # body = jsonify({"fname":fname,"lname":lname,"date":date,"email":email,"password":password})
+            # response = requests.post(url, json=body)
+            # if response.json()['message'] =="success":
+            #     TermsOfCondition()
+            # else:
+            #     st.error(response.json()['message'])
         elif password is not "":
             st.error("Error: Password not matched!")
     st.write("  \n")
