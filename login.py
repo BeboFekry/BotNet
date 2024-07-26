@@ -1,7 +1,8 @@
 import time
+
 import streamlit as st
-# import requests
-# from flask import jsonify
+import requests
+from flask import jsonify
 url = "http://127.0.0.1:5000/login"
 
 # app = st.Page("app.py")
@@ -27,11 +28,12 @@ with col3:
         if email is "" or password is "":
             st.error("Please enter your data!")
         if log==True:
+            # st.write(st.version)
             st.success("Success")
-            # st.balloons()
-            # time.sleep(2)
             st.session_state.logged_in = True
             st.rerun()
+            # st.balloons()
+            # time.sleep(2)
             # body = jsonify({"email": email, "password": password})
             # response = requests.post(url, body)
             # if response.json()['message'] == 'success':
