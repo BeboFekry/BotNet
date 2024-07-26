@@ -10,7 +10,7 @@ date = datetime.datetime(2000,5,25).date()
 st.write("---")
 col1, col2 = st.columns([1,6])
 with col1:
-    st.image(r"images\boy (1).png")
+    st.image(r"images/boy (1).png")
 with col2:
     st.write("  \n")
     st.subheader(f"{fname} {lname}")
