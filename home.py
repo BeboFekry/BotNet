@@ -1,14 +1,7 @@
 import streamlit as st
-# st.columns([1,2,1])[1].image("images\logo.png")
-# with st.columns(3)[1]:
-#     st.title("I CARE")
-
-# original_title = '<h1 style="font-family: serif; color:white; font-size: 20px;">Streamlit CSS Styling✨ </h1>'
-# st.markdown(original_title, unsafe_allow_html=True)
 
 st.set_page_config(layout='wide')
-# st.info(f"""{st.header("test")}""")
-# Set the background image
+
 background_image = """
 <style>
 [data-testid="stAppViewContainer"] > .main {
@@ -182,99 +175,6 @@ st.info(" ChatHub زود مبيعاتك دلوقتي مع")
 st.columns([1,1,1])[1].image("images/analytics.gif")
 st.write("  \n"); st.write("  \n"); st.write("  \n")
 # st.write("---")
-
-#
-# # Footer
-# st.columns([3,1,3])[1].image("images/logo.png")
-# col1, col2, col3 = st.columns(3)
-# with col1:
-#     st.write("Social")
-#     col11, col22 = st.columns([1,6])
-#     with col11:
-#         # st.image("images/702300.png")
-#         st.markdown("[![FB](https://raw.githubusercontent.com/BeboFekry/ChatHub/main/images/702300.png)](http://www.linkedin.com/in/abdallah-fekry)")
-#     with col22:
-#         st.caption("Linkedin")
-#     col11, col22 = st.columns([1,6])
-#     with col11:
-#         st.markdown("[![FB](https://raw.githubusercontent.com/BeboFekry/ChatHub/main/images/25231.png)](https://github.com/BeboFekry?tab=repositories)")
-#     with col22:
-#         st.caption("GitHub")
-#     col11, col22 = st.columns([1,6])
-#     with col11:
-#         st.markdown("[![FB](https://raw.githubusercontent.com/BeboFekry/ChatHub/main/images/4844503.png)](https://www.kaggle.com/bebofekry)")
-#     with col22:
-#         st.caption("Kaggle")
-#     col11, col22 = st.columns([1, 6])
-#     with col11:
-#         st.markdown("[![FB](https://raw.githubusercontent.com/BeboFekry/ChatHub/main/images/streamlit-mark-color.png)](https://abdalleh-fekry.streamlit.app/)")
-#     with col22:
-#         st.caption("Website")
-# with col2:
-#     st.write("Contact")
-#     st.caption("Eng. Abdallah Fekry")
-#     st.caption("Egypt, Cairo")
-#     st.caption("+20 111 9499 384")
-#     st.caption("abdallahfekry95@gmail.com")
-# with col3:
-#     st.write("About")
-#     st.caption("Smart Doctor")
-#     st.caption("Intelligent Comprehensive Medical System")
-#     st.caption("NLP + Computer Vision models that mimic a doctor")
-#
-# st.write("---")
-#
-# col1, col2, col3 = st.columns([1,3,1])
-# with col1:
-#     st.caption("Copyright protected")
-#
-#
-#
-# # Test Footer _________________________________________________________
-# st.write("  \n")
-# st.write("  \n")
-# st.write("  \n")
-# st.write("  \n")
-# st.write("---")
-#
-# col1, col2, col3, col3, col5 = st.columns([3,2,1,3,2])
-# with col1:
-#     st.write("  \n")
-#     st.write("  \n")
-#     st.write("  \n")
-#     st.columns([2,1])[0].image("images/logo.png")
-#     st.write("  \n")
-#     st.caption("Easy build your chatbot")
-# with col2:
-#
-#     st.caption("**Download**")
-#     st.caption("Windows App")
-#     st.caption("Mac App")
-#     st.caption("Linux App")
-#     st.caption("Desktop App")
-#     st.caption("**Services**")
-#     st.caption("Design")
-#     st.caption("Development")
-#
-# c = st.container()
-# st.write('This will show last')
-# c.write('This will show first')
-# c.write('This will show second')
-#
-# with st.expander('يعني نختار ايه؟'):
-#     st.write("ببساطة لو شغلك عبارة عن صفحة علي الفيس بوك او الانستا وعايز رد آلي علي مجموعة من الاسئلة انت عارفهم بالفعل يبقي النوع الاول هو الانسب ليك")
-# with st.expander('يعني نختار ايه؟'):
-#     st.write("ببساطة لو شغلك عبارة عن صفحة علي الفيس بوك او الانستا وعايز رد آلي علي مجموعة من الاسئلة انت عارفهم بالفعل يبقي النوع الاول هو الانسب ليك")
-# with st.expander('يعني نختار ايه؟'):
-#     st.write("ببساطة لو شغلك عبارة عن صفحة علي الفيس بوك او الانستا وعايز رد آلي علي مجموعة من الاسئلة انت عارفهم بالفعل يبقي النوع الاول هو الانسب ليك")
-# with st.expander('يعني نختار ايه؟'):
-#     st.write("ببساطة لو شغلك عبارة عن صفحة علي الفيس بوك او الانستا وعايز رد آلي علي مجموعة من الاسئلة انت عارفهم بالفعل يبقي النوع الاول هو الانسب ليك")
-# with st.expander('يعني نختار ايه؟'):
-#     st.write("ببساطة لو شغلك عبارة عن صفحة علي الفيس بوك او الانستا وعايز رد آلي علي مجموعة من الاسئلة انت عارفهم بالفعل يبقي النوع الاول هو الانسب ليك")
-# with st.expander('يعني نختار ايه؟'):
-#     st.write("ببساطة لو شغلك عبارة عن صفحة علي الفيس بوك او الانستا وعايز رد آلي علي مجموعة من الاسئلة انت عارفهم بالفعل يبقي النوع الاول هو الانسب ليك")
-
-
 
 # __________________________________________________________________________________________
 # Footer
