@@ -2,7 +2,7 @@ import streamlit as st
 # st.columns([1,2,1])[1].image("images\logo.png")
 # with st.columns(3)[1]:
 #     st.title("I CARE")
-st.columns([1,2,1])[1].image("images\logo.png")
+st.columns([1,2,1])[1].image("images/logo.png")
 st.info("Easy Build **Chatbots** for your business")
 st.write("  \n")
 
