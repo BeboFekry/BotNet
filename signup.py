@@ -1,8 +1,8 @@
 import streamlit as st
 import datetime
 import time
-import requests
-from flask import jsonify
+# import requests
+# from flask import jsonify
 
 
 @st.dialog("Terms of use:")
