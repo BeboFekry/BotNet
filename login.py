@@ -19,6 +19,7 @@ with col2:
     pass
 with col3:
     st.title("Login")
+    st.warning("Login for trial with  \nEmail: admin  \nPassword: admin")
     email = st.text_input(label="Email", max_chars=50)
     password = st.text_input(label="Password", max_chars=20, type='password')
     if email==email2 and password==password2 and password is not "" and email is not "":
