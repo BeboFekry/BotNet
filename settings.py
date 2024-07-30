@@ -1,6 +1,8 @@
 import streamlit as st
 import time
 
+st.header("Settings")
+
 tab1, tab2 = st.tabs(["Languages","Options"])
 language = "English"
 with tab1:

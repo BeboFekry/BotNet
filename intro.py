@@ -2,7 +2,7 @@ import streamlit as st
 # st.columns([1,2,1])[1].image("images\logo.png")
 # with st.columns(3)[1]:
 #     st.title("I CARE")
-st.columns([1,2,1])[1].image("images/logo.png")
+st.columns([1,2,1])[1].image("images\logo.png")
 st.info("Easy Build **Chatbots** for your business")
 st.write("  \n")
 
@@ -65,7 +65,7 @@ st.write("---")
 
 st.header("Social Media Variety")
 st.info("تقدر تربطه علي كل منصات التواصل الاجتماعي")
-st.columns([1,3,1])[1].image("images/Mobile Marketing.gif")
+st.columns([1,3,1])[1].image("images/Mobile Marketing-bro.png")
 st.write("---")
 
 st.header("Global Access")
@@ -139,38 +139,38 @@ st.columns([1,1])[0].success("يبقي النوع الثالث انسب ليك")
 st.write("---")
 
 # Footer
-col1, col2, col3 = st.columns(3)
-with col1:
-    st.write("Social")
-    col11, col22 = st.columns([1,4])
-    with col11:
-        st.image("images/702300.png")
-    with col22:
-        st.link_button("Linkedin", "http://www.linkedin.com/in/abdallah-fekry")
-    col11, col22 = st.columns([1,4])
-    with col11:
-        st.image("images/25231.png")
-    with col22:
-        st.link_button("GitHub", "https://github.com/BeboFekry?tab=repositories")
-    col11, col22 = st.columns([1,4])
-    with col11:
-        st.image("images/4844503.png")
-    with col22:
-        st.link_button("Kaggle", "https://www.kaggle.com/bebofekry")
+footer = st.container(border=True)
+with footer:
+    st.columns([3,1,3])[1].image("images/logo.png")
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.write("Services")
+        st.caption("Web App")
+        st.caption("Mobile App")
+        st.write("Social")
+        col11, col22, col33, col44, col5 = st.columns([1,1,1,1,5])
+        with col11:
+            st.markdown("[![FB](https://raw.githubusercontent.com/BeboFekry/ChatHub/main/images/702300.png)](http://www.linkedin.com/in/abdallah-fekry)")
+        with col22:
+            st.markdown("[![FB](https://raw.githubusercontent.com/BeboFekry/ChatHub/main/images/25231.png)](https://github.com/BeboFekry?tab=repositories)")
+        with col33:
+            st.markdown("[![FB](https://raw.githubusercontent.com/BeboFekry/ChatHub/main/images/4844503.png)](https://www.kaggle.com/bebofekry)")
+        with col44:
+            st.markdown("[![FB](https://raw.githubusercontent.com/BeboFekry/ChatHub/main/images/streamlit-mark-color.png)](https://abdalleh-fekry.streamlit.app/)")
+    with col2:
+        st.write("Contact")
+        st.caption("Eng. Abdallah Fekry")
+        st.caption("Egypt, Cairo")
+        st.caption("+20 111 9499 384")
+        st.caption("abdallahfekry95@gmail.com")
+    with col3:
+        st.write("About")
+        st.caption("Smart Doctor")
+        st.caption("Intelligent Comprehensive Medical System")
+        st.caption("NLP + Computer Vision models that mimic a doctor")
+
+    # st.caption("---")
+
+col1, col2 = st.columns([1, 70])
 with col2:
-    st.write("Contact")
-    st.caption("Eng. Abdallah Fekry")
-    st.caption("Egypt, Cairo")
-    st.caption("+20 111 9499 384")
-    st.caption("abdallahfekry95@gmail.com")
-with col3:
-    st.write("About")
-    st.caption("Smart Doctor")
-    st.caption("Intelligent Comprehensive Medical System")
-    st.caption("NLP + Computer Vision models that mimic a doctor")
-
-st.write("---")
-
-col1, col2, col3 = st.columns([1,3,1])
-with col1:
     st.caption("Copyright protected")

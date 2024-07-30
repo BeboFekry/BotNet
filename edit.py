@@ -1,7 +1,9 @@
+import time
+
 import streamlit as st
 import datetime
 
-
+st.header("Edit")
 # fname = "Abdallah"
 # lname = "Fekry"
 # email = "abdallahfekry95@gmail.com"
@@ -56,15 +58,19 @@ with tab1:
 
     bt = st.button("Finish")
     if bt:
-        if password2 is "":
-            st.error("Error: please enter your password!")
+        if change == False:
+            st.error("No changes in data!")
         else:
-            if log == True and change == True:
-                st.success("Success")
-            elif change == True:
-                st.error("Password not matched!")
-            if change == False:
-                st.error("No changes in data!")
+            if password2 is "":
+                st.error("Error: please enter your password!")
+            else:
+                if log == True and change == True:
+                    st.success("Success")
+                    # time.sleep(1)
+                    # st.rerun()
+                elif change == True:
+                    st.error("Wrong password!")
+
 
 with tab2:
     email = "abdallahfekry95@gmail.com"
@@ -83,15 +89,16 @@ with tab2:
 
     bt = st.button(" Finish")
     if bt:
-        if password2 is "":
-            st.error("Error: please enter your password!")
+        if change == False:
+            st.error("No changes in data!")
         else:
-            if log == True and change == True:
-                st.success("Success")
-            elif change == True:
-                st.error("Password not matched!")
-            if change == False:
-                st.error("No changes in data!")
+            if password2 is "":
+                st.error("Please enter your password!")
+            else:
+                if log == True and change == True:
+                    st.success("Success")
+                elif change == True:
+                    st.error("Wrong password!")
 
 with tab3:
     oldpass = "admin"
