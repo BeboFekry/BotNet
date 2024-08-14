@@ -15,7 +15,7 @@ background_image = """
 
 st.markdown(background_image, unsafe_allow_html=True)
 
-st.columns([1,2,1])[1].image("images/logo.png")
+st.columns([1,2,1])[1].image("images/Picsart_24-08-15_01-45-01-740.png")
 st.info("Easy Build **Chatbots** for your business")
 st.write("  \n")
 
