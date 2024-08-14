@@ -5,7 +5,7 @@ import streamlit as st
 # primaryColor="#4b84ff"
 # st.set_page_config(layout="wide")
 
-st.logo("images/Picsart_24-08-15_01-41-02-342.png")
+st.logo("images/Picsart_24-08-15_01-45-01-740.png")
 
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
