@@ -3,9 +3,9 @@ import streamlit as st
 # [theme]
 # base="light"
 # primaryColor="#4b84ff"
-st.set_page_config(layout="wide")
+# st.set_page_config()
 
-st.set_page_config(page_title="BotNet")
+st.set_page_config(page_title="BotNet", icon='images/icon2.png', layout="wide")
 
 st.logo("images/Picsart_24-08-15_01-45-01-740.png")
 
