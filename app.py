@@ -3,7 +3,7 @@ import streamlit as st
 # [theme]
 # base="light"
 # primaryColor="#4b84ff"
-# st.set_page_config(layout="wide")
+st.set_page_config(layout="wide")
 
 st.set_page_config(page_title="BotNet", page_icon="images/icon2")
 
