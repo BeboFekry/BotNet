@@ -1,0 +1,9 @@
+# secrets and api keys
+.env
+.streamlit/secrets.toml
+Analysis/
+
+# not used 
+test.ipynb
+test.py
+explaination.ipynb
