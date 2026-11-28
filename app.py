@@ -5,7 +5,7 @@ st.set_page_config(page_title="BotNet", page_icon='images/icon2.png', layout="wi
 st.logo("images/Picsart_24-08-15_01-45-01-740.png", size='large')
 
 if "logged_in" not in st.session_state:
-    st.session_state.logged_in = False
+    st.session_state.logged_in = True
 
 if "connected" not in st.session_state:
     st.session_state.connected = []
@@ -31,11 +31,12 @@ bot3 = st.Page("bot3.py", title="Chatbot 3", icon=":material/smart_toy:")
 logout = st.Page(logoutt, title="Logout", icon=":material/logout:")
 reports = st.Page("reports.py", title="Reports", icon=":material/view_list:")
 
-facebook = st.Page("facebook.py", title="Facebook Connect", icon=":material/share:")
-instagram = st.Page("instagram.py", title="Instagram Connect", icon=":material/share:")
-whatsapp = st.Page("whatsapp.py", title="Whatsapp Connect", icon=":material/share:")
-telegram = st.Page("telegram.py", title="Telegram Connect", icon=":material/share:")
+# facebook = st.Page("facebook.py", title="Facebook Connect", icon=":material/share:")
+# instagram = st.Page("instagram.py", title="Instagram Connect", icon=":material/share:")
+# whatsapp = st.Page("whatsapp.py", title="Whatsapp Connect", icon=":material/share:")
+# telegram = st.Page("telegram.py", title="Telegram Connect", icon=":material/share:")
 connections = st.Page("connected.py", title="Connected pages", icon=":material/link:")
+dashboard = st.Page("dashboard.py", title="Dashboard", icon=":material/insert_chart:")
 
 pages2 = {
     "":[login, signup, intro]
@@ -43,10 +44,12 @@ pages2 = {
 
 pages = {
     "": [profile, home],
-    "Chatbots": [bot1, bot2, bot3],
-    "Connections": [facebook, instagram, whatsapp, telegram, connections],
+    "AI Agents": [bot1, bot2, bot3],
+    "Social Media": [connections, dashboard],
     "Settings": [reports, settings, edit, logout]
 }
+
+# st.login(None)
 
 if st.session_state.logged_in == True:
     pg = st.navigation(pages)
